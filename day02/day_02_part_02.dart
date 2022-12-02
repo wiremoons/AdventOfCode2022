@@ -1,3 +1,4 @@
+#!/usr/bin/env -S dart
 //
 // @file day_02_part_02.dart
 // @brief Advent of Code (AOC) 2022 Puzzle solution for:  Day 02 Part 02.
@@ -10,6 +11,10 @@
 // @details Advent of Code (AOC) 2022 Puzzle solution. See: https://adventofcode.com/2022/
 //
 // @note The program can be run with Dart language: https://dart.dev/
+//
+// Disable some specific linting rules in this file only
+// ignore_for_file: unnecessary_brace_in_string_interps
+
 import 'dart:io';
 import 'dart:convert';
 
@@ -17,17 +22,15 @@ import 'dart:convert';
 // UTILITY HELPER FUNCTIONS
 ////////////////////////////////////////////////////////////////////////////////
 
-// Get: 'test_input.txt' == false or 'puzzle_input.txt' == true
-Future<String> getPuzzleFileInput(bool test) async {
-  final inputFileName = test ? "puzzle_input.txt" : "test_input.txt";
-  final inputFile = File('${Directory.current.path}/lib/day02/$inputFileName');
-  //stdout.writeln(inputFile);
+Future<String> getPuzzleFileInput(bool runTest) async {
+  final inputFileName = runTest ? "test_input.txt" : "puzzle_input.txt";
+  final inputFile = File('${Directory.current.path}/$inputFileName');
+
   if (!await inputFile.exists()) {
     stderr.writeln("ERROR: not found file: ${inputFile}");
     return "";
   }
-  //var length = await inputFile.length();
-  //print(length);
+
   try {
     var lines = await inputFile.readAsString();
     return lines;
@@ -137,12 +140,13 @@ int getRequiredScore(int p2) {
 ////////////////////////////////////////////////////////////////////////////////
 // ENTRY POINT FOR RUNNING PUZZLE SOLUTION FROM MAIN APPLICATION
 ////////////////////////////////////////////////////////////////////////////////
-void day_02_part_02() async {
-  bool puzzle = true;
-  //int answer = 0;
-  int run_score = 0;
+void main(List<String> arguments) async {
+  bool runTest = false;
+  (arguments.length == 1 && arguments[0] == "-t")
+      ? runTest = true
+      : runTest = false;
 
-  final String input = await getPuzzleFileInput(puzzle);
+  final String input = await getPuzzleFileInput(runTest);
   if (input.isEmpty) {
     stderr.writeln("ERROR: No file input available.");
     exit(1);
@@ -157,7 +161,10 @@ void day_02_part_02() async {
 
   LineSplitter ls = LineSplitter();
   List<String> lines = ls.convert(input);
-  lines.forEach((game) {
+
+  int run_score = 0;
+
+  for (String game in lines) {
     //stdout.writeln("Checking players shapes (running score: $run_score");
     final players = game.split(" ");
     int p1 = 0;
@@ -167,16 +174,16 @@ void day_02_part_02() async {
     p1 = getPlayerValue(players.first);
     p2 = getPlayerValue(players.last);
 
-    int shape_score = getRequiredScore(p2);
-    int game_score = getScore(p1, p2);
+    int shapeScore = getRequiredScore(p2);
+    int gameScore = getScore(p1, p2);
 
-    run_score = run_score + game_score + shape_score;
-    //stdout.writeln(" -> total : '$run_score' ($game_score + $shape_score = ${game_score + shape_score})");
-  });
+    run_score = run_score + gameScore + shapeScore;
+    //stdout.writeln(" -> total : '$run_score' ($gameScore + $shapeScore = ${gameScore + shapeScore})");
+  }
   // Test data answer:    12
   // Puzzle data answer:  12316
   stdout.writeln("""
  >>  Advent of Code: Day 02 Part 2  <<
      -> Rock Paper Scissors score is : '$run_score'
-     """);
+""");
 }

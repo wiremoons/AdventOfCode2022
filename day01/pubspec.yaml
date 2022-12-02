@@ -1,4 +1,4 @@
-name: aoc2022
+name: aoc2022_day01
 description: Advent of Code 2022 puzzle solutions in Dart.
 version: 1.0.0
 homepage: https://github.com/wiremoons/AdventOfCode2022
