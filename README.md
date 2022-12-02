@@ -14,8 +14,19 @@ The source code for each day and part is linked below:
 
 **Day 01**
 
+Figuring out the Dart language to acheive what I wanted was the trickiest part,
+but learnt a lot in the process.
+
 - [Day 01 Part 01](./lib/day01/day_01_part_01.dart)
 - [Day 01 Part 02](./lib/day01/day_01_part_02.dart)
+
+**Day 02**
+
+Solved it ok - but the code feels like a lot of compromises and very messy!
+Progress with Dart is ok, but frustrating still.
+
+- [Day 02 Part 01](./lib/day02/day_02_part_01.dart)
+- [Day 02 Part 02](./lib/day02/day_02_part_02.dart)
 
 ## Running the Code
 

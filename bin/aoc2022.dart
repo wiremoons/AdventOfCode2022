@@ -11,8 +11,14 @@ void main(List<String> arguments) {
   String day = "01";
   String part = "01";
   runDayPart(day, part);
-
   day = "01";
+  part = "02";
+  runDayPart(day, part);
+
+  day = "02";
+  part = "01";
+  runDayPart(day, part);
+  day = "02";
   part = "02";
   runDayPart(day, part);
 }
