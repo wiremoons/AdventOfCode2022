@@ -14,7 +14,7 @@ The source code for each day and part is linked below:
 
 **Day 01**
 
-Figuring out the Dart language to acheive what I wanted was the trickiest part,
+Figuring out the Dart language to achieve what I wanted was the trickiest part,
 but learnt a lot in the process.
 
 - [Day 01 Part 01](./day01/day_01_part_01.dart)
@@ -27,6 +27,16 @@ Progress with Dart is ok, but a bit frustrating still.
 
 - [Day 02 Part 01](./day02/day_02_part_01.dart)
 - [Day 02 Part 02](./day02/day_02_part_02.dart)
+
+**Day 03**
+
+Felt more productive to today. While the puzzle was not completed any quicker,
+the learning experience covering Dart lists, sets and character conversations
+was all interesting, and good practical experience. Enjoyed the process, and the
+outcome felt worthwhile.
+
+- [Day 03 Part 01](./day03/day_03_part_01.dart)
+- [Day 03 Part 02](./day03/day_03_part_02.dart)
 
 ## Running the Code
 
