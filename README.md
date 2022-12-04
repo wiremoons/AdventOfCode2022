@@ -38,6 +38,19 @@ outcome felt worthwhile.
 - [Day 03 Part 01](./day03/day_03_part_01.dart)
 - [Day 03 Part 02](./day03/day_03_part_02.dart)
 
+**Day 04**
+
+Enjoyable puzzle. Wasted a lot of time trying to write my code using a more
+_functional style_ with `map` instead of more traditional `for loops`. Was
+partially successful - but reverted to a `for` loop for the final logic tests
+and count in the end. The 'Part 2' was a matter of swapping the `&&` for `||` on
+the range checking - so easy once I understood the question. Also used
+[Helix](https://helix-editor.com) text editor to code in, for most of the
+session, which added some more challenging overhead to the experience.
+
+- [Day 04 Part 01](./day04/day_04_part_01.dart)
+- [Day 04 Part 02](./day04/day_04_part_02.dart)
+
 ## Running the Code
 
 The setup was originally created using the `dart create` command - but the work
