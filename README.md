@@ -51,6 +51,28 @@ session, which added some more challenging overhead to the experience.
 - [Day 04 Part 01](./day04/day_04_part_01.dart)
 - [Day 04 Part 02](./day04/day_04_part_02.dart)
 
+**Day 05**
+
+Today's puzzle was frustrating, but not due to the solutions complexity or
+difficulty, but mainly from the perspective of parsing in the puzzle data. I was
+unable to finished the puzzle on the day it came out, as I was back in work
+today, so had less time, and the time I did have was spent fighting with Dart
+(due to my lack of knowledge) trying to get the input ready. By the end of _Day
+05_ I am getting there, but time to call it a day, and come back to it when I
+have more time. Hoping _Day 06_ will be more achievable on a 'work day'.
+
+- [Day 05 Part 01](./day05/day_05_part_01.dart) -> still _work in progress_
+- [Day 05 Part 02](./day05/day_05_part_02.dart) -> still _work in progress_
+
+**Day 06**
+
+Managed to finish _Day 06_ before starting work today, which I am please about
+after having the opposite experience yesterday. Hopefully can complete the _work
+in progress_ puzzle _Day 05_ later... and catch back up.
+
+- [Day 06 Part 01](./day06/day_06_part_01.dart)
+- [Day 06 Part 02](./day06/day_06_part_02.dart)
+
 ## Running the Code
 
 The setup was originally created using the `dart create` command - but the work
