@@ -73,6 +73,17 @@ in progress_ puzzle _Day 05_ later... and catch back up.
 - [Day 06 Part 01](./day06/day_06_part_01.dart)
 - [Day 06 Part 02](./day06/day_06_part_02.dart)
 
+**Day 07**
+
+Started _Day 07_ the morning the puzzle came out - but was unable to complete it
+due to other commitments. The solution was only one line of code away from
+working - but I didnt realise it at the time when I stopped! So on _Day 11_ I
+have the time to try to catch up on now, and have complete both parts. Was an
+interesting puzzle, and I leant about using Dart `map` features.
+
+- [Day 07 Part 01](./day07/day_07_part_01.dart)
+- [Day 07 Part 02](./day07/day_07_part_02.dart)
+
 ## Running the Code
 
 The setup was originally created using the `dart create` command - but the work
